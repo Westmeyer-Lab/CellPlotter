@@ -41,7 +41,7 @@ This guide provides step-by-step instructions on how to use the Napari plugin to
 ## Image Processing and Analysis
 
 6. **Use PyStackReg:**
-   - From the Napari `Plugins` menu, add the PyStackReg plugin if you haven’t already done so.
+   - From the Napari `Plugins` menu, add the PyStackReg plugin if you haven’t already done so. You can find more information about the plugin [here](https://www.napari-hub.org/plugins/napari-pystackreg).
    - In the PyStackReg widget, select the Numpy array layer and click on `Register and Transform`.
    - This will create a new registered layer.
 
@@ -54,6 +54,7 @@ This guide provides step-by-step instructions on how to use the Napari plugin to
 ## Segmentation and Analysis
 
 8. **Perform Segmentation with Cellpose:**
+   - To learn how to use the plugin visit [here](https://www.napari-hub.org/plugins/cellpose-napari)
    - Select the processed image layer and extract a single image using the select single image widget or provide a mean image of multiple frames. Because cellpose will segment a single image to produce mask.
 ![Alt text](singleimg.png)
    - Go to the `Plugins` menu and select Cellpose.
@@ -62,7 +63,7 @@ This guide provides step-by-step instructions on how to use the Napari plugin to
    - Run segmentation on the single image layer. 
    - The output will be displayed in new layers.
 
-9. **Plot Intensity:**
+10. **Plot Intensity:**
    - Select the image layer you wish to analyze (e.g., Processed Image layer) in the plot fluorescence widget. This layer should contain multiple images to get fluorescence over time.
 ![Alt text](fluo.png)
    - Choose the mask provided by Cellpose.
