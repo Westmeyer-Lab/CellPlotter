@@ -2,10 +2,7 @@
 
 This guide provides step-by-step instructions on how to use the Napari plugin to process and analyze images in a Jupyter notebook.
 
-<a href="https://github.com/username/repository-name" target="_blank">
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="20" height="20" />
-</a>  [View the Westmeyer Lab Napari Plugin Repository](https://github.com/onurburakozdemir/WestmeyerLabNapari)
-
+[View the Repository](https://github.com/onurburakozdemir/WestmeyerLabNapari)
 
 ## Installation
 
@@ -27,21 +24,21 @@ This guide provides step-by-step instructions on how to use the Napari plugin to
    - Go to the top menu in Napari and select `File > Open Folder`.
    - Choose the folder containing your images.
 
-### Optional: Organizing Image Outputs
+## Optional: Organizing Image Outputs
 
 4. **(Optional) Run Merge and Move Widgets:**
    - If you wish to use the "Merge images" and "Move images" widgets to organize images outputted by CX07, you can run the separate cell in the notebook. 
    - This step is to organize images taken from CX07 microscope and can be skipped if not needed.
    - You can close these widgets once you've completed organizing the images.
 
-### Preparing Images for Processing
+## Preparing Images for Processing
 
 5. **Convert Images to Numpy Arrays:**
    - Select the image layer in the third widget.
 ![Alt text](numpy.png)
    - Click the button to convert the selected image layer into a Numpy array.
    - The output will be a new layer containing the Numpy array.
-### Image Processing and Analysis
+## Image Processing and Analysis
 
 6. **Use PyStackReg:**
    - From the Napari `Plugins` menu, add the PyStackReg plugin if you haven’t already done so.
@@ -54,7 +51,7 @@ This guide provides step-by-step instructions on how to use the Napari plugin to
    - Choose the desired operations and press `Run`.
    - The output will be a new processed image layer.
 
-### Segmentation and Analysis
+## Segmentation and Analysis
 
 8. **Perform Segmentation with Cellpose:**
    - Select the processed image layer and extract a single image using the select single image widget or provide a mean image of multiple frames. Because cellpose will segment a single image to produce mask.
